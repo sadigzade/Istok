@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontFamily;
+  height: 100vh;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media (max-width: $md3+'px') {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+
+input,
+input:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-color: #9FCBC6;
+}
+
+.dignity, .about, .map, .production {
+  &-title {
+    background: linear-gradient(180deg, #10233C 3.13%, #007476 49.38%, #10233C 100%);
+    padding: 15px 0;
+    @media (max-width: $md3+'px') {
+      padding: 10px 0;
+    }
+    h2 {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      @media (max-width: $md3+'px') {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+tr, td, th {
+  padding: 0;
+}

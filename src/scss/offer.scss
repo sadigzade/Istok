@@ -1,0 +1,114 @@
+.offer {
+  background: linear-gradient(180deg, #10233C 3.13%, #007476 49.38%, #10233C 100%);
+  padding: 60px 0 34px;
+  @media (max-width: $md3+'px') {
+    padding: 30px 0;
+  }
+  ._container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $md3+'px') {
+      flex-direction: column;
+    }
+  }
+  &-img {
+    @media (max-width: $md4+'px') {
+      max-width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &-block {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $md4+'px') {
+      margin-top: 10px;
+    }
+    &__row {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      color: #fff;
+      @media (max-width: $md4+'px') {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      a {
+        color: inherit;
+      }
+    }
+    .number {
+      letter-spacing: 0.04em;
+      &-tel {
+        margin-right: 20px;
+      }
+    }
+    .order {
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 25px;
+      &-descr {
+        color: #FFEC00;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+      &-icon {
+        background: #FFEC00;
+        backdrop-filter: blur(250px);
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        margin-right: 12px;
+        cursor: pointer;
+        @media (max-width: $md4+'px') {
+          width: 40px;
+          height: 40px;
+        }
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          @media (max-width: $md4+'px') {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          background: transparent;
+          border: 1px solid rgba(255, 235, 55, 0.5);
+          border-radius: 50px;
+        }
+        &::before {
+          width: 72px;
+          height: 72px;
+          top: -6px;
+          left: -6px;
+          @media (max-width: $md4+'px') {
+            width: 52px;
+            height: 52px;
+            top: -6px;
+            left: -6px;
+          }
+        }
+        &::after {
+          width: 84px;
+          height: 84px;
+          top: -12px;
+          left: -12px;
+          @media (max-width: $md4+'px') {
+            width: 64px;
+            height: 64px;
+            top: -12px;
+            left: -12px;
+          }
+        }
+      }
+    } 
+  }
+}

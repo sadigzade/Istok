@@ -1,0 +1,59 @@
+// Миксин для шрифтов ================================================
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+    url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+} 
+// Цвета по умолчанию ================================================
+
+// Шрифт по умолчанию ================================================
+$fontFamily: 'MyriadPro', sans-serif;
+// Переменные ========================================================
+$minWidth: 320px;
+$maxWidth: 1400;
+$maxWidthContainer: 1300;
+$md1: $maxWidthContainer;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+// Оболочка ==========================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+// Основная сетка ====================================================
+._container {
+  max-width: $maxWidthContainer+px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 15px;
+}
+
+._small-container {
+  max-width: 974px;
+}
+// Подключение глобальных стилей
+@import "global";
+// Подключение шрифтов
+@import "fonts";
+// Шпаргалки по загатовкам для слайдера
+@import "slider";
+
+// Подключение стилей блоков
+@import "header";
+
+@import "offer";
+@import "main";
+@import "dignity";
+@import "about";
+@import "map";
+
+@import "footer";

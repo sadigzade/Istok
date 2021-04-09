@@ -1,0 +1,104 @@
+.about {
+  &-content {
+    padding: 75px 0;
+    color: #084552;
+    @media (max-width: $md3+'px') {
+      padding: 25px 0;
+    }
+    &__title {
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 32px;
+      letter-spacing: 0.02em;
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+    }
+    &__text {
+      margin: 31px 0;
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      .text-color {
+        color: #C00121;
+        font-weight: 600;
+      }
+    }
+    &__quote {
+      font-size: 27px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      margin-bottom: 70px;
+      @media (max-width: $md4+'px') {
+        margin-bottom: 35px;
+      }
+    }
+    .blocks {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-row {
+        display: flex;
+        @media (max-width: $md3+'px') {
+          flex-direction: column;
+        }
+        &:first-child {
+          margin-bottom: 30px;
+        }
+        .item-block {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: linear-gradient(93.22deg, #10233C 3.91%, #007276 47.85%, #10233C 100%);
+          border-radius: 5px;
+          width: 520px;
+          padding: 20px 12px 20px 35px;
+          @media (max-width: $md1+'px') {
+            width: 400px;
+          }
+          @media (max-width: $md2+'px') {
+            flex-direction: column;
+            width: 280px;
+            padding: 15px;
+          }
+          @media (max-width: $md3+'px') {
+            margin-bottom: 30px;
+          }
+          @media (max-width: $md4+'px') {
+            width: 250px;
+          }
+          &:last-child {
+            margin-left: 30px;
+            @media (max-width: $md3+'px') {
+              margin-left: 0;
+              margin-bottom: 0;
+            }
+          }
+          &__icon {
+            width: 80px;
+            @media (max-width: $md3+'px') {
+              width: auto;
+            }
+          }
+          &__descr {
+            color: #fff;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: 0.05em;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            width: 70%;
+            @media (max-width: $md1+'px') {
+              font-size: 22px;
+              text-align: center;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

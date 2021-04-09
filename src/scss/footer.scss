@@ -1,0 +1,177 @@
+.footer {
+  background: linear-gradient(180deg, #10233C 0.52%, #007276 53.54%, #10233C 100%);
+  color: #fff;
+  padding: 52px 0 83px;
+  @media (max-width: $md4+'px') {
+    padding: 20px 0;
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $md2+'px') {
+      flex-direction: column;
+    }
+    &__title {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 0.05em;
+      @media (max-width: $md4+'px') {
+        font-size: 24px;
+      }
+    }
+    &__form {
+      display: flex;
+      align-items: center;
+      @media (max-width: $md2+'px') {
+        margin-top: 20px;
+      }
+      @media (max-width: $md3+'px') {
+        flex-direction: column;
+      }
+      .input-email {
+        background: none;
+        border: 1.8px solid #FFFFFF;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 22px;
+        line-height: 46px;
+        letter-spacing: 0.03em;
+        color: #CED8DC;
+        padding: 10px 56px;
+        margin-right: 23px;
+        @media (max-width: $md1+'px') {
+          margin-right: 15px;
+          padding: 10px 42px;
+        }
+        @media (max-width: $md3+'px') {
+          width: 100%;
+          margin: 0 0 10px 0;
+        }
+        @media (max-width: $md4+'px') {
+          font-size: 18px;
+        }
+        &::placeholder {
+          color: #CED8DC;
+        }
+      }
+      .btn-send {
+        background: #fff;
+        border-radius: 6px;
+        font-size: 32px;
+        line-height: 38px;
+        color: #084552;
+        padding: 13px 60px;
+        border: 1.8px solid #FFFFFF;
+        transition: all .3s ease 0s;
+        @media (max-width: $md3+'px') {
+          width: 100%;
+        }
+        @media (max-width: $md4+'px') {
+          font-size: 24px;
+        }
+        &:hover {
+          background-color: transparent;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 73px;
+    @media (max-width: $md2+'px') {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+    &__logo {
+      height: auto;
+      @media (max-width: $md4+'px') {
+        width: 100%;
+      }
+    }
+    .info {
+      display: flex;
+      @media (max-width: $md2+'px') {
+        margin-top: 20px;
+      }
+      @media (max-width: $md4+'px') {
+        flex-direction: column;
+      }
+      &-column {
+        margin-left: 84px;
+        letter-spacing: 0.03em;
+        position: relative;
+        @media (max-width: $md1+'px') {
+          margin-left: 30px;
+        }
+        @media (max-width: $md3+'px') {
+          margin-left: 20px;
+        }
+        @media (max-width: $md4+'px') {
+          margin-left: 0;
+          margin: 14px 0 0 0;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 93%;
+          background-color: #fff;
+          top: 0;
+          right: -42px;
+          @media (max-width: $md1+'px') {
+            right: -15px;
+          }
+          @media (max-width: $md3+'px') {
+            right: -10px;
+          }
+          @media (max-width: $md4+'px') {
+            width: 240px;
+            height: 1px;
+            top: auto;
+            left: 0;
+            bottom: 1px;
+          }
+        }
+        &:last-child::before {
+          display: none;
+        }
+        &:last-child {
+          width: 200px;
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        &__list {
+          text-transform: uppercase;
+          li {
+            a {
+              margin: 0 0 16px 0;
+              transition: all .3s ease 0s;
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+        a {
+          color: #fff;
+          display: block;
+          margin: 16px 0;
+          transition: all .3s ease 0s;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: '1160px') {
+    justify-content: space-around;
+  }
+}
+/* Слайд */
+.slick-slide {
+  outline: none;
+}
+/* Стрелка */
+.slick-arrow {  
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  font-size: 0;
+  z-index: 2;
+  bottom: -54px;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  background: url('../img/main/left-arrow.svg') 0 0 / 100% no-repeat;
+  left: 40%;
+  @media (max-width: $md3+'px') {
+    left: 30%;
+  }
+  @media (max-width: $md4+'px') {
+    left: 20%;
+  }
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  background: url('../img/main/right-arrow.svg') 0 0 / 100% no-repeat;
+  right: 40%;
+  @media (max-width: $md3+'px') {
+    right: 30%;
+  }
+  @media (max-width: $md4+'px') {
+    right : 20%;
+  }
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+  opacity: 0.5;
+}
